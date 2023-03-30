@@ -23,3 +23,38 @@
 ![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)&nbsp;
 ![Emacs](https://img.shields.io/badge/-Emacs-05122A?style=flat&logo=emacs)&nbsp;
 ![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC)&nbsp;
+
+
+```txt
+{
+   "Records":[
+      {
+         "eventID":"1",
+         "eventName":"INSERT",
+         "eventVersion":"1.0",
+         "eventSource":"aws:dynamodb",
+         "awsRegion":"us-east-1",
+         "dynamodb":{
+            "Keys":{
+               "Id":{
+                  "N":"101"
+               }
+            },
+            "NewImage":{
+               "Message":{
+                  "S":"New item!"
+               },
+               "Id":{
+                  "N":"101"
+               }
+            },
+            "SequenceNumber":"111",
+            "SizeBytes":26,
+            "StreamViewType":"NEW_AND_OLD_IMAGES"
+         },
+         "eventSourceARN":"stream-ARN"
+      },
+      ...
+   ]
+}
+```
