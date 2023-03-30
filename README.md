@@ -25,21 +25,4 @@
 ![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC)&nbsp;
 
 
-```mermaid
-sequenceDiagram
-    participant S as Server
-    participant C as Client
-    autonumber
-    Note over S: Create ServerSocket
-    S-->>C: Wait for request
-    C->>S: Creat socket to request to connet
-    S-->>C: Accept connection on socket //accept()
-    rect rgb(200, 150, 255)
-    loop Messages
-        Note over S,C: InputStream
-        Note over S,C: outputStream
-        S-->C: Communication
-    end
-    end
-    S-->C: Close socket
-```
+
